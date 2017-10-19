@@ -9,8 +9,15 @@ package convers;
  *
  * @author user
  */
-public interface ITransformador {
+public class ConversorC extends AConversor {
     
-    double grado2radian();
-    double kelvin2celsius();
+    @Override
+    double grado2radian(){
+        return(dato*Math.PI)/180;
+    }
+    
+    @Override
+    double farenheit2kelvin(){
+        return (dato+459.67)*5/9;
+    }
 }
